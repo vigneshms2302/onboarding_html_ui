@@ -92,17 +92,15 @@ body {
     flex-grow: 1; /* Allow this div to grow and take available space */
 }
 
-.qs_app_step {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.qs_app_step {   
+    display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .qs_app_step.active {
+    display: block;
     opacity: 1;
     visibility: visible;
 }
